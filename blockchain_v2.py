@@ -74,6 +74,8 @@ class BlockChain():
 
 	def search_proof_of_work(self,block):
 
+		difficulty = '0000'
+
 		# block string without proof
 		block_string = 	str(block.index) + \
 						str(block.timestamp) + \
@@ -85,14 +87,15 @@ class BlockChain():
 		while 1 :
 			block_string_with_proof = block_string + str(proof)
 			block_hash = hashlib.sha256(block_string_with_proof).hexdigest()
-			if block_hash[:3] == '000':
+			if block_hash[:4] == difficulty:
 				break
 			proof = proof + 1
 
 		block.proof = proof
 
 		return block
-		
+
+
 
 new_chain = BlockChain()
 
