@@ -25,3 +25,6 @@ block_string = json.dumps(block)
 
 print hashlib.sha256(block_string).hexdigest()
 
+
+
+print str([0,1,2,3])
