@@ -9,3 +9,5 @@ https://cryptozombies.io/
 https://www.youtube.com/watch?v=-_Qs0XdPpw8
 
 https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
+
+https://medium.freecodecamp.org/how-does-blockchain-really-work-i-built-an-app-to-show-you-6b70cd4caf7d
