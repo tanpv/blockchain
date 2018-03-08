@@ -16,6 +16,7 @@ https://hackernoon.com/wtf-is-the-blockchain-1da89ba19348
 
 https://hackernoon.com/we-already-know-blockchains-killer-apps-f2d443eba35
 
+https://www.youtube.com/watch?v=Fqr8_iQv8hU
 
 
 
