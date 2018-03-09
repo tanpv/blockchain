@@ -1,16 +1,20 @@
 """
 
 A minimum blockchain
+
 	- understand how blocks are chain together
 	- understand proof of work
 	- understand transaction and block creation
+	- understand blockchain as service
 
 """
+
 
 import time
 import json
 import hashlib
-
+from flask import Flask, jsonify, request
+from flask.json import JSONEncoder
 
 
 class Block(object):
@@ -117,7 +121,6 @@ class BlockChain():
 
 	def new_transaction(self, sender, recipient, amount):
 
-		
 		"""
 			- append to transaction
 			- return the block which will added transaction to
@@ -131,24 +134,48 @@ class BlockChain():
 		return len(self.chain)
 
 
+############################### blockchain as service ####################
+
+from flask import Flask
+app = Flask(__name__)
+app.json_encoder = JSONEncoder
+ 
 
 # init new chain
 new_chain = BlockChain()
 
+@app.route("/mine", methods=['GET'])
+def mine():
+	return "start mine"
 
-# setting block number
-block_num = 10
+@app.route('/transactions/new', methods=['POST'])
+def new_transaction():
+	return "start transaction"
+
+@app.route('/chain', methods=['GET'])
+def chain():
+	return "the chain"
+	
+if __name__ == "__main__":
+	app.run()
 
 
-# do transaction and add block to chain
-for index in range(1, block_num+1):
-	new_chain.new_transaction('abc','def', index)
-	new_chain.add_block_to_chain()
 
 
-# print the chain
-for block in new_chain.chain:
-	print json.dumps(block.__dict__, indent=4, sort_keys=False)
-	print new_chain.hash_block(block)
-	print'\n\n'
-	time.sleep(1)
+
+# # setting block number
+# block_num = 10
+
+
+# # do transaction and add block to chain
+# for index in range(1, block_num+1):
+# 	new_chain.new_transaction('abc','def', index)
+# 	new_chain.add_block_to_chain()
+
+
+# # print the chain
+# for block in new_chain.chain:
+# 	print json.dumps(block.__dict__, indent=4, sort_keys=False)
+# 	print new_chain.hash_block(block)
+# 	print'\n\n'
+# 	time.sleep(1)
