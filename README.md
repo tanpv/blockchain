@@ -18,6 +18,8 @@ https://hackernoon.com/we-already-know-blockchains-killer-apps-f2d443eba35
 
 https://www.youtube.com/watch?v=Fqr8_iQv8hU
 
+https://www.youtube.com/watch?v=8jI1TuEaTro&t=107s
+
 
 
 
