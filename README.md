@@ -26,3 +26,6 @@ https://www.youtube.com/watch?v=rmtsh7Q7sbE&list=PLV1JDFUtrXpFh85G-Ddyy2kLSafaB9
 
 **Deep Courses**
 https://github.com/digital-dreamer/blockchain-programming/wiki/Video-lectures-and-courses
+
+**More Courses**
+https://digitaldefynd.com/best-blockchain-courses-training-and-certifications-online/#2_Blockchain_Course_Blockchain_and_Bitcoin_Fundamentals
